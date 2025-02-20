@@ -1,4 +1,5 @@
 {
+  "homepage": "https://CatsNpat.github.io/OC_Projet5",
   "name": "my-react-app",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +9,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^19.0.0",
