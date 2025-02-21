@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import "./assets/my-sass.scss";
 
+
 export default function App() {
   return (
     <BrowserRouter>
