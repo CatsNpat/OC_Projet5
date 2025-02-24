@@ -1,5 +1,99 @@
-$myColor: red;
-
-h1 {
-  color: $myColor;
+body {
+  padding: 5em;
 }
+
+
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: black;
+  img{
+    width: 100%;
+    margin: 1em;
+    padding: 1em;
+  }
+  p{
+    color: white;
+    width: 100%;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+  }
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: bisque;
+  border-radius: 1.25em;
+}
+
+.logement {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5em;
+  padding: 2em;
+  height: 22em;
+  width: 22em;
+  border-radius: 1.25em;
+  img{
+    display: flex;
+    object-fit: cover;
+    height: 22em;
+    width: 22em;
+    border-radius: 1.25em;
+  }
+  h2 {
+    display: flex;
+    margin: 0;
+    font-size: 0.80em;
+    position: relative;
+    bottom: 2em;
+    left: 0.5em;
+  }
+}
+
+.header {
+  display: flex;
+  margin-bottom: 2em;
+  nav{
+    display: flex;
+    img {
+      width: 10em;
+      height: auto;
+      margin: 1em 2em 1em 2em;
+      object-fit: contain;
+    }
+  }
+} 
+
+.imgSlogan {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 10em;
+    border-radius: 1.25em;
+    img{
+      width:100%;
+      height: 10em;
+      object-fit: cover;
+      border-radius: 1.25em;
+    }
+    h2 {
+      display: flex;
+      position: relative;
+      bottom: 5em;
+      margin: 0;
+      font-size: 2em;
+      justify-content: center;
+      color: white;
+      background: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      height: 5em;
+      border-radius: 1.25em;
+      align-items: center;
+    }
+  }

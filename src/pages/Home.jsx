@@ -1,50 +1,41 @@
-import logo from '../assets/imgHome/LOGO.png';
 import imgFondSlogan from '../assets/imgHome/imgFondSlogan.png';
 import  logementData from '../../public/logements.json';
-import { useState, useEffect } from 'react';
-// import `../assets/my-sass.scss`
+import '../assets/my-sass.scss';
 
 function Banner () {
   return (
-    <header>
-      <img src = {logo} alt = "Logo de Kasa"/>    
-      <ul>
-        <li>
-          <a href ='../pages/Home.jsx'>Accueil</a>
-        </li>
-        <li>
-          <a href ='../pages/Blogs.jsx'>À propos</a>
-        </li>
-      </ul>
-      <>
-      <img src = {imgFondSlogan} alt ="photo d'une falaise"/>
-      <p>Chez vous, partout et ailleurs</p>
-      </>
-    </header>  
+      <div className='imgSlogan'>
+        <img src = {imgFondSlogan} alt ="photo d'une falaise"/>
+        <h2>Chez vous, partout et ailleurs</h2>
+      </div>
   )
 }
 
-function Liste ({logement}) {
+function Liste () {
   
   return (
-    <div>
-      {logement.map((element) => (
-        <div key = {element.id}>
-          <img src = {element.cover} />
-        </div>
-      ))}
-    </div>
+    <main>
+      <div className='main'>
+        {logementData.map((element) => (
+          <div className='logement' key = {element.id}>
+            <img src = {element.cover} title = {element.title} alt = {element.title}/>
+            <h2>{element.title}</h2>
+          </div>
+        ))}
+      </div>
+    </main>
   )
 }
+
+
 
 const Home = () => {
     return (
       <>
         <Banner />
-        <Liste logement = {logementData} />
+        <Liste />
       </>
     )  
   };
   
   export default Home;
-  

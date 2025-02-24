@@ -2,7 +2,9 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-import Blogs from "./pages/Blogs";
+import NavBanner from "./components/nav";
+import FooterNav from "./components/footer";
+import APropos from "./pages/APropos";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import "./assets/my-sass.scss";
@@ -11,14 +13,23 @@ import "./assets/my-sass.scss";
 export default function App() {
   return (
     <BrowserRouter>
+      <nav>
+        <NavBanner />
+      </nav>
+
       <Routes>
-        <Route path="/" element={<Layout />}>
+        {/* <Route path="/" element={<Layout />}> */}
           <Route index element={<Home />} />
-          <Route path="blogs" element={<Blogs />} />
+          <Route path="APropos" element={<APropos />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
-        </Route>
+        {/* </Route> */}
       </Routes>
+
+      <footer>
+        <FooterNav />
+      </footer>
+      
     </BrowserRouter>
   );
 }
