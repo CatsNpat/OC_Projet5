@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    margin-bottom: 2em;
+}
+nav{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  img {
+    width: 20em;
+    height: auto;
+    margin: 1em 2em 1em 2em;
+    object-fit: contain;
+  }
+  ul {
+    display: flex;
+    width: 20%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  ::marker {
+    color: white;
+  }
+  li {
+    font-size: 2em;
+  }
+  li :hover {
+    color: black;
+    text-decoration: underline;
+  }
+}

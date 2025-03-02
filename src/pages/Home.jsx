@@ -5,9 +5,11 @@ import '../assets/my-sass.scss';
 function Banner () {
   return (
       <div className='imgSlogan'>
-        <img src = {imgFondSlogan} alt ="photo d'une falaise"/>
-        <h2>Chez vous, partout et ailleurs</h2>
-      </div>
+        <img src = {imgFondSlogan} alt ="photo d'une falaise" titre ="photo d'une falaise"/>
+          <div>
+            <h2>Chez vous, partout et ailleurs</h2>
+          </div>
+      </div> 
   )
 }
 
@@ -17,10 +19,10 @@ function Liste () {
     <main>
       <div className='main'>
         {logementData.map((element) => (
-          <div className='logement' key = {element.id}>
+          <a href="#" className='logement' key = {element.id}>
             <img src = {element.cover} title = {element.title} alt = {element.title}/>
-            <h2>{element.title}</h2>
-          </div>
+            <h3>{element.title}</h3>
+          </a>
         ))}
       </div>
     </main>

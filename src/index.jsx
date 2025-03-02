@@ -13,9 +13,9 @@ import "./assets/my-sass.scss";
 export default function App() {
   return (
     <BrowserRouter>
-      <nav>
+      <header  className='header'>
         <NavBanner />
-      </nav>
+      </header>
 
       <Routes>
         {/* <Route path="/" element={<Layout />}> */}

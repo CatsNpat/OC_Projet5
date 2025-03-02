@@ -4,20 +4,20 @@ import '../assets/my-sass.scss';
 
 function Banner () {
   return (
-    <header className='header'>
+    <nav>
       <>
-        <img src = {logo} alt = "Logo de Kasa"/>    
-        <ul>
-          <li>
-          <Link to="/">Accueil</Link>
-          </li>
-          <li>
-          <Link to="/APropos">À propos</Link>
-          </li>
-        </ul>
-        <Outlet />
-      </>
-    </header>  
+        <img src = {logo} alt = "Logo de Kasa"/>
+      </>   
+      <ul>
+        <li>
+        <Link to="/">Accueil</Link>
+        </li>
+        <li>
+        <Link to="/APropos">À propos</Link>
+        </li>
+      </ul>
+      <Outlet />
+    </nav> 
   )
 }
 

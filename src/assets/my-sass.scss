@@ -1,7 +1,40 @@
+
+
 body {
   padding: 5em;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+@import "header";
 
 
 .footer {
@@ -26,74 +59,70 @@ body {
 .main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  background-color: bisque;
+  justify-content: space-around;
+  background-color: rgba(247, 247, 247, 0.8);
   border-radius: 1.25em;
+  box-sizing: border-box;
 }
 
 .logement {
   display: flex;
   flex-direction: column;
-  margin: 2.5em;
-  padding: 2em;
-  height: 22em;
-  width: 22em;
+  margin-top: 1.15em;
+  padding: 1em 1.15em;
+  height: 29.75em;
+  width: 29.75em;
   border-radius: 1.25em;
   img{
     display: flex;
     object-fit: cover;
-    height: 22em;
-    width: 22em;
+    height: 20em;
+    width: 29.75em;
     border-radius: 1.25em;
   }
-  h2 {
+  h3 {
+    margin: 0;
     display: flex;
     margin: 0;
-    font-size: 0.80em;
-    position: relative;
-    bottom: 2em;
-    left: 0.5em;
+    height: 9.75em;
   }
+
 }
 
-.header {
-  display: flex;
-  margin-bottom: 2em;
-  nav{
-    display: flex;
-    img {
-      width: 10em;
-      height: auto;
-      margin: 1em 2em 1em 2em;
-      object-fit: contain;
-    }
-  }
-} 
+@mixin taille-slogan {
+  width: 100%;
+  height: 30em;
+  border-radius: 1.25em;
+}
 
 .imgSlogan {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    height: 10em;
-    border-radius: 1.25em;
+    @include taille-slogan;
+    margin-bottom: 2em;
     img{
-      width:100%;
-      height: 10em;
+      @include taille-slogan;
       object-fit: cover;
-      border-radius: 1.25em;
     }
-    h2 {
+    div{
       display: flex;
       position: relative;
-      bottom: 5em;
-      margin: 0;
-      font-size: 2em;
+      bottom: 30em;
+      @include taille-slogan;
       justify-content: center;
       color: white;
       background: rgba(0, 0, 0, 0.6);
-      width: 100%;
-      height: 5em;
-      border-radius: 1.25em;
       align-items: center;
+      h2 {
+        margin: 0;
+        font-size: 5em;
+      }
     }
   }
+
+@media (prefers-color-scheme: light) {
+  #root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
