@@ -17,10 +17,10 @@ function Banner () {
 function Liste () {
 
   return (
-    <main>
+    <main className='mainApropos'>
       <>
         {listeAPropos.map((element) => (
-          <div key = {element.id}>
+          <div className='boutonApropos' key = {element.id}>
           <Button loup = {element} />
           </div>
         ))}

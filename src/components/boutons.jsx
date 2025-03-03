@@ -10,11 +10,15 @@ function Button ({loup}) {
 
   return (
     <>
-      <h3>{loup.title}</h3>
-      <button onClick = {()=> setOpen(!open)}>
-        {!open ? <FontAwesomeIcon icon={['fas', 'chevron-up']} /> : <FontAwesomeIcon icon={['fas', 'chevron-down']} />}
-      </button>      
-      <p style = {{ display: open ? "flex" : "none"}}>{loup.text}</p>
+      <div className='pawouet'>
+        <h3>{loup.title}</h3>
+        <button onClick = {()=> setOpen(!open)}>
+          {!open ? <FontAwesomeIcon icon={['fas', 'chevron-up']} /> : <FontAwesomeIcon icon={['fas', 'chevron-down']} />}
+        </button>
+      </div>      
+      <div style = {{ display: open ? "flex" : "none"}}>
+        <p>{loup.text}</p>
+      </div>
     </>
   )
 }

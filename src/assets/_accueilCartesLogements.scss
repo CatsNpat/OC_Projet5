@@ -1,0 +1,32 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgba(247, 247, 247, 0.8);
+  border-radius: 1.25em;
+  box-sizing: border-box;
+}
+
+.logement {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.15em;
+  padding: 1em 1.15em;
+  height: 29.75em;
+  width: 29.75em;
+  border-radius: 1.25em;
+  img{
+    display: flex;
+    object-fit: cover;
+    height: 20em;
+    width: 29.75em;
+    border-radius: 1.25em;
+  }
+  h3 {
+    margin: 0;
+    display: flex;
+    margin: 0;
+    height: 9.75em;
+  }
+
+}
