@@ -1,4 +1,4 @@
-import logo from '../assets/imgHome/LOGO.png';
+import logo from '../assets/imgHome/LOGOF.png';
 import '../assets/my-sass.scss';
 
 function Footer () {

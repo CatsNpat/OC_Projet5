@@ -4,19 +4,21 @@ import '../assets/my-sass.scss';
 
 function Banner () {
   return (
+    <div className='imgSlogandiv'>
       <div className='imgSlogan'>
         <img src = {imgFondSlogan} alt ="photo d'une falaise" titre ="photo d'une falaise"/>
           <div>
             <h2>Chez vous, partout et ailleurs</h2>
           </div>
-      </div> 
+      </div>
+    </div>
   )
 }
 
 function Liste () {
   
   return (
-    <main>
+    <main className='mainMain'>
       <div className='main'>
         {logementData.map((element) => (
           <a href="#" className='logement' key = {element.id}>

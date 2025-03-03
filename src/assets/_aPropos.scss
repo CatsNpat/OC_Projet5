@@ -1,8 +1,14 @@
+.aPropos{
+    display: flex;
+    justify-content: center;
+}
+
 .mainApropos {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1em 0 1em 0;
+    width: 77.5em;
 }
 
 

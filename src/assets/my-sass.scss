@@ -42,9 +42,14 @@ a{
 @import "quatreCents";
 
 @mixin taille-slogan {
-  width: 100%;
-  height: 30em;
+  width: 77.5em;
+  height: 14em;
   border-radius: 1.25em;
+}
+
+.imgSlogandiv {
+  display: flex;
+  justify-content: center;
 }
 
 .imgSlogan {
@@ -59,7 +64,7 @@ a{
     div{
       display: flex;
       position: relative;
-      bottom: 30em;
+      bottom: 14em;
       @include taille-slogan;
       justify-content: center;
       color: white;
@@ -67,7 +72,7 @@ a{
       align-items: center;
       h2 {
         margin: 0;
-        font-size: 5em;
+        font-size: 3em;
       }
     }
   }

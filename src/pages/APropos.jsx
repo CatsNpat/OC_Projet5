@@ -7,9 +7,11 @@ import Button from '../components/boutons.jsx';
 
 function Banner () {
   return (
-    <div className='imgSlogan'>
-    <img src = {imgFondSlogan} alt ="vallée montagneuse" titre ="vallée montagneuse"/>
-  </div>
+    <div className='imgSlogandiv'>
+      <div className='imgSlogan'>
+      <img src = {imgFondSlogan} alt ="vallée montagneuse" titre ="vallée montagneuse"/>
+      </div>
+    </div>
   )
 }
 
@@ -17,14 +19,14 @@ function Banner () {
 function Liste () {
 
   return (
-    <main className='mainApropos'>
-      <>
+    <main className='aPropos'>
+      <div className='mainApropos'>
         {listeAPropos.map((element) => (
           <div className='boutonApropos' key = {element.id}>
           <Button loup = {element} />
           </div>
         ))}
-      </>  
+      </div>  
     </main>
   )
 }

@@ -1,13 +1,14 @@
 .header {
     display: flex;
     margin-bottom: 2em;
+    justify-content: space-around;
 }
 nav{
   display: flex;
-  width: 100%;
+  width: 77.5em;
   justify-content: space-between;
   img {
-    width: 20em;
+    width: 13.145em;
     height: auto;
     margin: 1em 2em 1em 2em;
     object-fit: contain;
@@ -22,7 +23,7 @@ nav{
     color: white;
   }
   li {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   li :hover {
     color: black;
