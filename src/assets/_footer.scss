@@ -3,6 +3,9 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: black;
+    div{
+      display: flex;
+    }
     img{
       width: 100%;
       margin: 1em;

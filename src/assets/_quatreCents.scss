@@ -1,0 +1,28 @@
+.quatreMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0 1em 0;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        h2 {
+            color: rgba(255, 96, 96, 1);
+            font-size: 2500%;
+            font-weight: bold;
+            margin: 0;
+        }
+        p {
+            color: rgba(255, 96, 96, 1);
+            font-size: 250%;
+            margin: 0;
+        }
+    }
+}
+.quatrePara {
+    text-decoration: underline;
+    font-size: 150%;
+    margin: 5em 0 5em 0;
+}

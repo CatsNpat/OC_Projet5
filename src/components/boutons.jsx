@@ -16,7 +16,7 @@ function Button ({loup}) {
           {!open ? <FontAwesomeIcon icon={['fas', 'chevron-up']} /> : <FontAwesomeIcon icon={['fas', 'chevron-down']} />}
         </button>
       </div>      
-      <div style = {{ display: open ? "flex" : "none"}}>
+      <div className= "collapseApropos" style = {{ display: open ? "flex" : "none"}}>
         <p>{loup.text}</p>
       </div>
     </>
