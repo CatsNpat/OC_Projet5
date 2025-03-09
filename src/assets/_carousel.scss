@@ -1,0 +1,37 @@
+.Carousel_Container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.Carousel_Containers {
+    display: flex;
+    flex-direction: column;
+    img {
+        display: flex;
+        object-fit: cover;
+        width: 77.5em;
+        height: 25.938em;
+        border-radius: 1.25em;
+    }
+}
+
+.Carousel_Chevrons {
+    display: flex;
+    width: 77.5em;
+    height: 7.6em;
+    position: relative;
+    bottom: 15em;
+    justify-content: space-between;
+    button {
+        background-color: transparent;
+        border: none;
+        width: 6em;
+        height: 7.478em;
+    }
+    .Icon{
+        width: 6em;
+        height: 7.478em;
+        color: white;
+    }
+}

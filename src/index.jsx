@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import NavBanner from "./components/nav";
 import FooterNav from "./components/footer";
 import APropos from "./pages/APropos";
-import Contact from "./pages/Contact";
+import LogementDetail from "./pages/LogementDetail";
 import NoPage from "./pages/NoPage";
 import "./assets/my-sass.scss";
 
@@ -21,7 +21,7 @@ export default function App() {
         {/* <Route path="/" element={<Layout />}> */}
           <Route index element={<Home />} />
           <Route path="APropos" element={<APropos />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="LogementDetail/:id" element={<LogementDetail />} />
           <Route path="*" element={<NoPage />} />
         {/* </Route> */}
       </Routes>

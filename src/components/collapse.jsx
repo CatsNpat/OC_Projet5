@@ -5,12 +5,12 @@ import {library} from '@fortawesome/fontawesome-svg-core';
 import {faDisplay, fas} from '@fortawesome/free-solid-svg-icons';
 library.add(fas);
 
-function Button ({loup}) {
+function Collapse ({loup}) {
   const[open, setOpen] = useState(false);
 
   return (
     <>
-      <div className='pawouet'>
+      <div className='collapseTout'>
         <h3>{loup.title}</h3>
         <button onClick = {()=> setOpen(!open)}>
           {!open ? <FontAwesomeIcon icon={['fas', 'chevron-up']} /> : <FontAwesomeIcon icon={['fas', 'chevron-down']} />}
@@ -23,4 +23,4 @@ function Button ({loup}) {
   )
 }
 
-export default Button;
+export default Collapse;

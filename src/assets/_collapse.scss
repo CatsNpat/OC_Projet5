@@ -1,0 +1,28 @@
+.collapseTout {
+    display: flex;
+    background-color: rgba(255, 96, 96, 1);
+    color: white;
+    margin-bottom: 0.5em;
+    justify-content: space-around;
+    width: 100%;
+    border-radius: 0.5em;
+    padding: 0;
+h3 {
+    display: flex;
+    width: 90%;
+}
+button {
+    display: flex;
+    background-color: rgba(255, 96, 96, 1);
+    color: white;
+    border: none;
+    align-items: center;
+}
+}
+.collapseApropos {
+padding: 0 1.125em;
+overflow: hidden;
+p {
+    color: black;
+}
+}

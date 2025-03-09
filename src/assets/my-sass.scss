@@ -1,4 +1,11 @@
-
+@use "header";
+@use "listeCards";
+@use "footer";
+@use "aPropos";
+@use "quatreCents";
+@use "banner";
+@use "collapse";
+@use "carousel";
 
 body {
   padding: 5em;
@@ -35,47 +42,6 @@ a{
   text-decoration: none;
 }
 
-@import "header";
-@import "accueilCartesLogements";
-@import "footer";
-@import "aPropos";
-@import "quatreCents";
-
-@mixin taille-slogan {
-  width: 77.5em;
-  height: 14em;
-  border-radius: 1.25em;
-}
-
-.imgSlogandiv {
-  display: flex;
-  justify-content: center;
-}
-
-.imgSlogan {
-    display: flex;
-    flex-wrap: wrap;
-    @include taille-slogan;
-    margin-bottom: 2em;
-    img{
-      @include taille-slogan;
-      object-fit: cover;
-    }
-    div{
-      display: flex;
-      position: relative;
-      bottom: 14em;
-      @include taille-slogan;
-      justify-content: center;
-      color: white;
-      background: rgba(0, 0, 0, 0.6);
-      align-items: center;
-      h2 {
-        margin: 0;
-        font-size: 3em;
-      }
-    }
-  }
 
 @media (prefers-color-scheme: light) {
   #root {
