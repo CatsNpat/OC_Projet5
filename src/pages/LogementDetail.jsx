@@ -12,6 +12,7 @@ function LogementDetail () {
         {Pictures.map((element) => (
           element.id === params.id && < ChoixLogementCarousel imgCarousel={element} key = {element.id}/>
           ))}
+        
       </main>
     )
   };

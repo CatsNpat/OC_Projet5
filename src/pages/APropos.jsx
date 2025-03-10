@@ -13,7 +13,7 @@ function Liste () {
       <div className='mainApropos'>
         {listeAPropos.map((element) => (
           <div className='boutonApropos' key = {element.id}>
-          <Collapse loup = {element} />
+          <Collapse title = {element.title} text = {element.text} />
           </div>
         ))}
       </div>  
