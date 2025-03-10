@@ -1,0 +1,37 @@
+.logement_detail{
+    display: flex;
+    width: 77.5em;
+    justify-content: space-between;
+}
+
+.logement_detailPremier {
+    display: flex;
+    width: 51.6em;
+    flex-direction: column;
+    nav {
+        display: flex;
+        width: 51.6em;
+        justify-content: flex-start;
+        button {
+            background-color: rgba(255, 96, 96, 1);
+            border: none;
+            border-radius: 1.25em;
+            width: 7.188em;
+            height: 1.563em;
+            color: white;
+            margin-left: 1em;
+        }
+    }
+}
+
+.logement_titre{
+    font-size: 2.25em;
+    color: rgba(255, 96, 96, 1);
+    margin: 0;
+}
+
+.logement_detailDeuxieme {
+    display: flex;
+    width: 25.9em;
+    flex-direction: column;
+}

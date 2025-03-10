@@ -8,9 +8,11 @@ import {useParams} from "react-router-dom";
 function LogementDetail () {
   const params = useParams()
     return (
-      <ChoixLogementCarousel 
-      imgCarousel={Pictures}
-      idLogement = {params.id}/>
+      <main className="Main_LogementDetail">
+        {Pictures.map((element) => (
+          element.id === params.id && < ChoixLogementCarousel imgCarousel={element} key = {element.id}/>
+          ))}
+      </main>
     )
   };
   
