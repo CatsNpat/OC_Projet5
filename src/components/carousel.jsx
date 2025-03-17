@@ -22,11 +22,15 @@ function Carousel ({ttesSlides}) {
 
     return (
         <section className = "Carousel_Containers">
-            <img src = {ttesSlides[slide]} key = {slide}/>
+            <div className='Carousel_Containers_Img'>
+                <img src = {ttesSlides[slide]} key = {slide}/>
+            </div>
+            {ttesSlides.length >= 2 ?
             <div className="Carousel_Chevrons">
                 <button onClick = {SlidePrevious}><FontAwesomeIcon icon={['fas', 'chevron-left']} className='Icon'/></button>
                 <button onClick = {SlideNext}><FontAwesomeIcon icon={['fas', 'chevron-right']} className='Icon'/></button>
             </div>
+            : null}
         </section>
     )
     

@@ -1,3 +1,5 @@
+@import "myColor";
+
 .mainMain{
   display: flex;
   justify-content: center;
@@ -8,7 +10,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: rgba(247, 247, 247, 0.8);
-  border-radius: 1.25em;
+  border-radius: $myBorderRadius;
   box-sizing: border-box;
   width: 77.5em;
 }
@@ -18,15 +20,12 @@
   flex-direction: column;
   margin-top: 1.15em;
   padding: 1em 1.15em;
-  height: 21.25em;
-  width: 21.25em;
-  border-radius: 1.25em;
+  @include card-logement;
+
   img{
     display: flex;
     object-fit: cover;
-    height: 21.25em;
-    width: 21.25em;
-    border-radius: 1.25em;
+    @include card-logement;
   }
   h3 {
     display: flex;

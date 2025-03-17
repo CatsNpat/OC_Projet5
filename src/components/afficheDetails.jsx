@@ -12,7 +12,7 @@ function AffichageDetails({logement}) {
             <div className='logement_detailPremier'>
                 <h3>
                     <p className='logement_titre'>{logement.title}</p>
-                    <p>{logement.location}</p>
+                    <p className='logement_titre_lieu'>{logement.location}</p>
                 </h3>
                 <nav>
                     {logement.tags.map((element, index) =>
@@ -21,11 +21,11 @@ function AffichageDetails({logement}) {
                 </nav>
             </div>    
             <div className='logement_detailDeuxieme'>
-                <h4>
+                <h4 className ='logement_detailDeuxiemeHost'>
                     <p>{logement.host.name}</p>
                     <img src = {logement.host.picture}/>
                 </h4>
-                <div>
+                <div className='logement_detailDeuxiemeRating'>
                     {logement.rating >0 ? <FontAwesomeIcon icon="fa-solid fa-star" /> : <FontAwesomeIcon icon="fa-regular fa-star" />}
                     {logement.rating >1 ? <FontAwesomeIcon icon="fa-solid fa-star" /> : <FontAwesomeIcon icon="fa-regular fa-star" />}
                     {logement.rating >2 ? <FontAwesomeIcon icon="fa-solid fa-star" /> : <FontAwesomeIcon icon="fa-regular fa-star" />}

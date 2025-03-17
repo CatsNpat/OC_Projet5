@@ -1,14 +1,22 @@
-
+@import "myColor";
 
 .Carousel_Containers {
     display: flex;
     flex-direction: column;
+    height: 25.938em;
+
+}
+.Carousel_Containers_Img {
+    display: flex;
+    width: 77.5em;
+    height: 25.938em;
+    border-radius: $myBorderRadius;
     img {
         display: flex;
         object-fit: cover;
         width: 77.5em;
         height: 25.938em;
-        border-radius: 1.25em;
+        border-radius: $myBorderRadius;
     }
 }
 
@@ -24,6 +32,7 @@
         border: none;
         width: 6em;
         height: 7.478em;
+        cursor: pointer;
     }
     .Icon{
         width: 6em;

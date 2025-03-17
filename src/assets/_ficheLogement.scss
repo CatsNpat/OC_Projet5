@@ -1,0 +1,9 @@
+@use "carousel";
+@use "details";
+@import "myColor";
+
+.Main_LogementDetail {
+    @include display-column;
+    margin-bottom: 2em;
+    justify-content: center;
+}

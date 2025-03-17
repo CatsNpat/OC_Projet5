@@ -1,3 +1,5 @@
+@import "myColor";
+
 .logement_detail{
     display: flex;
     width: 77.5em;
@@ -8,25 +10,35 @@
     display: flex;
     width: 51.6em;
     flex-direction: column;
+    h3 {
+        margin-left: 1em;
+        p {
+            margin: 0em;
+        }
+    }
     nav {
         display: flex;
         width: 51.6em;
         justify-content: flex-start;
+        margin-top: 4em;
         button {
-            background-color: rgba(255, 96, 96, 1);
+            background-color: $myColor;
             border: none;
-            border-radius: 1.25em;
+            border-radius: $myBorderRadius;
             width: 7.188em;
             height: 1.563em;
             color: white;
             margin-left: 1em;
+            align-items: center;
+            display: flex;
+            justify-content: center;
         }
     }
 }
 
 .logement_titre{
     font-size: 2.25em;
-    color: rgba(255, 96, 96, 1);
+    color: $myColor;
     margin: 0;
 }
 
@@ -34,6 +46,22 @@
     display: flex;
     width: 25.9em;
     flex-direction: column;
+}
+
+.logement_detailDeuxiemeHost {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: $myColor;
+    margin-left: 1em;
+    p {
+        color:$myColor;
+        margin-right: 3em;
+    }
+    img {
+        justify-content: center;
+        border-radius: 10em;
+    }
 }
 
 .logement_detailCollapse{
@@ -46,4 +74,16 @@
     display: flex;
     flex-direction: column;
     width: 36.375em;
+    margin-top: 3em;
+}
+
+.logement_detailDeuxiemeRating{
+    display: flex;
+    color:$myColor;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.5em;
+    svg {
+        margin-left: 1.5em;
+    }
 }

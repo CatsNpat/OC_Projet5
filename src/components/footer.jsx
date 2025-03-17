@@ -5,10 +5,13 @@ function Footer () {
 
     return (
         <div className='footer'>
-            <div>
-          <img src = {logo} alt = "Logo de Kasa"/>
-            </div>
-        <p>© 2020 Kasa. All rights reserved</p>
+          <div>
+            <img src = {logo} alt = "Logo de Kasa"/>
+          </div>
+          <div className='footer_p'>
+            <p>© 2020 Kasa. </p>
+            <p>All rights reserved</p>
+          </div>
         </div>
     )
   }

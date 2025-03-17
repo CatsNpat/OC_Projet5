@@ -1,7 +1,8 @@
+@import "myColor";
+
 .footer {
-    display: flex;
+    @include display-column;
     flex-wrap: wrap;
-    justify-content: center;
     background-color: black;
     div{
       display: flex;
@@ -11,12 +12,16 @@
       margin: 1em;
       padding: 1em;
     }
-    p{
-      color: white;
-      font-size: 1.5em;
-      width: 100%;
-      margin: 1em;
-      padding: 1em;
-      text-align: center;
-    }
   }
+.footer_p {
+  display:flex;
+  width: 50%;
+  justify-content: center;
+  p{
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0.5em;
+    text-align: center;
+  }
+}

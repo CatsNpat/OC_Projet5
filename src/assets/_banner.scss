@@ -1,9 +1,6 @@
-@mixin taille-slogan {
-    width: 77.5em;
-    height: 14em;
-    border-radius: 1.25em;
-  }
-  
+@import "myColor";
+
+ 
   .imgSlogandiv {
     display: flex;
     justify-content: center;

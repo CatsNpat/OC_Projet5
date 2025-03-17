@@ -1,21 +1,19 @@
+@import "myColor";
+
 .quatreMain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include display-column;
     margin: 1em 0 1em 0;
     div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include display-column;
         
         h2 {
-            color: rgba(255, 96, 96, 1);
+            color: $myColor;
             font-size: 18em;
             font-weight: bold;
             margin: 0;
         }
         p {
-            color: rgba(255, 96, 96, 1);
+            color: $myColor;
             font-size: 2.25em;
             margin: 0;
         }

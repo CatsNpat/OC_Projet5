@@ -1,10 +1,10 @@
 import AffichageDetails from "./afficheDetails";
-import Carousel from "./genererCarousel";
+import Carousel from "./carousel";
 import Collapse from "./collapse";
 
 function ChoixLogementCarousel({imgCarousel}) {
     return (
-        <div className="Carousel_Container">
+        <>
             < Carousel ttesSlides = {imgCarousel.pictures} key = "carousel.{imgCarousel.id}"/>
             < AffichageDetails logement = {imgCarousel} key = "detail.{imgCarousel.id}"/>
             <section className="logement_detailCollapse">
@@ -15,7 +15,7 @@ function ChoixLogementCarousel({imgCarousel}) {
                     < Collapse title = "Équipements" text ={imgCarousel.equipments.map((element, index) => (<li key ={index}>{element}</li>))} key = "collapseE.{imgCarousel.id}" />
                 </div>
             </section>
-        </div>
+        </>
     )
 }
 

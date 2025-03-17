@@ -6,7 +6,7 @@ function Banner () {
   return (
     <nav>
       <>
-        <img src = {logo} alt = "Logo de Kasa"/>
+        <Link to="/"> <img src = {logo} alt = "Logo de Kasa"/></Link>
       </>   
       <ul>
         <li>

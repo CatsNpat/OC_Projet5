@@ -1,6 +1,8 @@
+@import "myColor";
+
 .collapseTout {
     display: flex;
-    background-color: rgba(255, 96, 96, 1);
+    background-color: $myColor;
     color: white;
     margin-bottom: 0.5em;
     justify-content: space-around;
@@ -13,16 +15,33 @@ h3 {
 }
 button {
     display: flex;
-    background-color: rgba(255, 96, 96, 1);
+    background-color: $myColor;
     color: white;
     border: none;
     align-items: center;
+    border-radius: 0.5em;
+    cursor: pointer;
 }
 }
 .collapseApropos {
-padding: 0 1.125em;
-overflow: hidden;
-p {
-    color: black;
+    padding: 0 1.125em;
+    animation-duration: 1s;
+    animation-name: collaspe;
+    overflow: hidden;
+    p{
+        width: 100%;
+        color: black;
+        margin-top: 0;
 }
 }
+@keyframes collaspe {
+    from {
+        margin-top: -2%;
+        height: 0%;
+    }
+    to {
+        margin-top: 0;
+        height: 100%;
+    }
+}
+
