@@ -9,14 +9,12 @@ function Carousel ({ttesSlides}) {
     const[slide, setSlide] = useState(0);
 
     const SlidePrevious = () => {
-        const firstSlide = slide === 0;
-        const newIndex = firstSlide ? ttesSlides.length - 1 : slide - 1;
+        const newIndex = slide === 0 ? ttesSlides.length - 1 : slide - 1;
         setSlide(newIndex);
         };
         
     const SlideNext = () => {
-        const lastSlide = slide === ttesSlides.length - 1;
-        const newIndex = lastSlide ? 0 : slide + 1;
+        const newIndex = slide === ttesSlides.length - 1 ? 0 : slide + 1;
         setSlide(newIndex);
         };
 

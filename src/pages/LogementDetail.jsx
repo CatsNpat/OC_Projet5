@@ -1,4 +1,4 @@
-import ChoixLogementCarousel from "../components/choixLogementCarrousel";
+import LogementChoisi from "../components/LogementChoisi";
 import Pictures from "../../public/logements.json";
 import {useParams} from "react-router-dom";
 
@@ -10,7 +10,7 @@ function LogementDetail () {
     return (
       <main className="Main_LogementDetail">
         {Pictures.map((element) => (
-          element.id === params.id && < ChoixLogementCarousel imgCarousel={element} key = {element.id}/>
+          element.id === params.id && < LogementChoisi imgCarousel={element} key = {element.id}/>
           ))}
         
       </main>

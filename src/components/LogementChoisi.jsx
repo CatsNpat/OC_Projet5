@@ -2,7 +2,7 @@ import AffichageDetails from "./afficheDetails";
 import Carousel from "./carousel";
 import Collapse from "./collapse";
 
-function ChoixLogementCarousel({imgCarousel}) {
+function LogementChoisi({imgCarousel}) {
     return (
         <>
             < Carousel ttesSlides = {imgCarousel.pictures} key = "carousel.{imgCarousel.id}"/>
@@ -19,4 +19,4 @@ function ChoixLogementCarousel({imgCarousel}) {
     )
 }
 
-export default ChoixLogementCarousel;
+export default LogementChoisi;

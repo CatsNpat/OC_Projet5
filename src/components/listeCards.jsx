@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 function ListeCards ({logement}) {
@@ -13,7 +13,6 @@ function ListeCards ({logement}) {
           </Link>
         ))}
       </div>
-      <Outlet />
     </main>
   )
 }

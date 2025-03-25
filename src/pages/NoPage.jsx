@@ -1,5 +1,5 @@
 import '../assets/my-sass.scss';
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Erreur () {
 
@@ -13,7 +13,6 @@ function Erreur () {
       <div className='quatrePara'>
         <Link to="/">Retourner sur la page d'accueil</Link>
       </div>
-      <Outlet />
     </main>
   )
 }

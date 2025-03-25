@@ -1,5 +1,5 @@
 import logo from '../assets/imgHome/LOGO.png';
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import '../assets/my-sass.scss';
 
 function Banner () {
@@ -16,7 +16,6 @@ function Banner () {
         <Link to="/APropos">À propos</Link>
         </li>
       </ul>
-      <Outlet />
     </nav> 
   )
 }
