@@ -27,15 +27,16 @@
     object-fit: cover;
     @include card-logement;
   }
-  h3 {
+  h4 {
     display: flex;
     margin: 0;
-    font-size: 0.75em;
     color: white;
     opacity: 1;
     position: relative;
     bottom: 3.5em;
-    left: 0.5em;
+    padding-left: 0.7em;
+    width: 17em;
+
   }
 
 }

@@ -7,10 +7,12 @@ function ListeCards ({logement}) {
     <main className='mainMain'>
       <div className='main'>
         {logement.map((element) => (
-          <Link to={`/LogementDetail/${element.id}`} className='logement' key = {element.id}>
+          <div className="logement" key = {element.id}>
+          <Link to={`/LogementDetail/${element.id}`}>
             <img src = {element.cover} title = {element.title} alt = {element.title}/>
-            <h3>{element.title}</h3>
+            <h4>{element.title}</h4>
           </Link>
+          </div>
         ))}
       </div>
     </main>
