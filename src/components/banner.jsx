@@ -1,8 +1,8 @@
-function Banner ({element, h2}) {
+function Banner ({element, alt, title, h2}) {
   return (
     <div className='imgSlogandiv'>
       <div className='imgSlogan'>
-        <img src = {element}/>
+        <img src = {element} alt = {alt} title = {title}/>
           <div>
             <h2>{h2}</h2>
           </div>

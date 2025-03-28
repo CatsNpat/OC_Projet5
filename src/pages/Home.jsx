@@ -12,7 +12,7 @@ const Home = () => {
         <Banner 
           element = {imgFondSlogan} 
           alt ="Image d'une falaise" 
-          titre = "Image d'une falaise"
+          title = "Image d'une falaise"
           h2 = "Chez vous, partout et ailleurs" />
         <ListeCards 
           logement = {logementData} />

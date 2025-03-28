@@ -7,6 +7,7 @@ library.add(fas, far);
 
 
 function AffichageDetails({logement}) {
+    const rating = ["1", "2", "3", "4", "5"];
     return(
         <section className='logement_detail'>
             <div className='logement_detailPremier'>
@@ -26,11 +27,8 @@ function AffichageDetails({logement}) {
                     <img src = {logement.host.picture}/>
                 </h4>
                 <div className='logement_detailDeuxiemeRating'>
-                    {logement.rating >0 ? <FontAwesomeIcon icon="fa-solid fa-star" /> : <FontAwesomeIcon icon="fa-regular fa-star" />}
-                    {logement.rating >1 ? <FontAwesomeIcon icon="fa-solid fa-star" /> : <FontAwesomeIcon icon="fa-regular fa-star" />}
-                    {logement.rating >2 ? <FontAwesomeIcon icon="fa-solid fa-star" /> : <FontAwesomeIcon icon="fa-regular fa-star" />}
-                    {logement.rating >3 ? <FontAwesomeIcon icon="fa-solid fa-star" /> : <FontAwesomeIcon icon="fa-regular fa-star" />}
-                    {logement.rating >4 ? <FontAwesomeIcon icon="fa-solid fa-star" /> : <FontAwesomeIcon icon="fa-regular fa-star" />}
+                    {rating.map((toto) =>(
+                    logement.rating >= toto ? <FontAwesomeIcon icon="fa-solid fa-star" /> : <FontAwesomeIcon icon="fa-regular fa-star" />))}
                 </div>
             </div>
         </section>
