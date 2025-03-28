@@ -1,5 +1,5 @@
-import listeAPropos from '../../public/apropos.json';
-import Collapse from '../components/collapse.jsx';
+import listeAPropos from '../data/apropos.json';
+import Collapse from './collapse.jsx';
 
 function Liste () {
 

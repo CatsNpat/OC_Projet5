@@ -1,5 +1,5 @@
 import imgFondSlogan from '../assets/imgHome/imgFondSlogan.png';
-import  logementData from '../../public/logements.json';
+import  logementData from '../data/logements.json';
 import '../assets/my-sass.scss';
 import Banner from '../components/banner.jsx';
 import ListeCards from '../components/listeCards.jsx';

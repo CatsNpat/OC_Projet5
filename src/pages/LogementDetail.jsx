@@ -1,5 +1,5 @@
 import LogementChoisi from "../components/LogementChoisi";
-import Pictures from "../../public/logements.json";
+import Pictures from "../data/logements.json";
 import {useParams} from "react-router-dom";
 
 
