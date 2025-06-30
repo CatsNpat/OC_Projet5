@@ -1,4 +1,4 @@
-@import "myColor";
+@use "myColor";
 
 .mainMain{
   display: flex;
@@ -10,7 +10,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: rgba(247, 247, 247, 0.8);
-  border-radius: $myBorderRadius;
+  border-radius: myColor.$myBorderRadius;
   box-sizing: border-box;
   width: 77.5em;
 }
@@ -20,12 +20,12 @@
   flex-direction: column;
   margin: 1.2em 0em 1em 0em;
   padding: 1em 1.15em;
-  @include card-logement;
+  @include myColor.card-logement;
 
   img{
     display: flex;
     object-fit: cover;
-    @include card-logement;
+    @include myColor.card-logement;
   }
   h4 {
     display: flex;

@@ -1,19 +1,19 @@
-@import "myColor";
+@use "myColor";
 
 .quatreMain {
-    @include display-column;
+    @include myColor.display-column;
     margin: 1em 0 1em 0;
     div {
-        @include display-column;
+        @include myColor.display-column;
         
         h2 {
-            color: $myColor;
+            color: myColor.$myColor;
             font-size: 18em;
             font-weight: bold;
             margin: 0;
         }
         p {
-            color: $myColor;
+            color: myColor.$myColor;
             font-size: 2.25em;
             margin: 0;
         }

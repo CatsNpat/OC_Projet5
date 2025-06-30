@@ -1,4 +1,4 @@
-@import "myColor";
+@use "myColor";
 
  
   .imgSlogandiv {
@@ -9,17 +9,17 @@
   .imgSlogan {
       display: flex;
       flex-wrap: wrap;
-      @include taille-slogan;
+      @include myColor.taille-slogan;
       margin-bottom: 2em;
       img{
-        @include taille-slogan;
+        @include myColor.taille-slogan;
         object-fit: cover;
       }
       div{
         display: flex;
         position: relative;
         bottom: 14em;
-        @include taille-slogan;
+        @include myColor.taille-slogan;
         justify-content: center;
         color: white;
         background: rgba(0, 0, 0, 0.6);

@@ -1,9 +1,9 @@
 @use "carousel";
 @use "details";
-@import "myColor";
+@use "myColor";
 
 .Main_LogementDetail {
-    @include display-column;
+    @include myColor.display-column;
     margin-bottom: 2em;
     justify-content: center;
 }

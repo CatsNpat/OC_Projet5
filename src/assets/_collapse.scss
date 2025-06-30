@@ -1,8 +1,8 @@
-@import "myColor";
+@use "myColor";
 
 .collapseTout {
     display: flex;
-    background-color: $myColor;
+    background-color: myColor.$myColor;
     color: white;
     margin-bottom: 0.5em;
     justify-content: space-around;
@@ -15,7 +15,7 @@ h3 {
 }
 button {
     display: flex;
-    background-color: $myColor;
+    background-color: myColor.$myColor;
     color: white;
     border: none;
     align-items: center;

@@ -1,7 +1,7 @@
-@import "myColor";
+@use "myColor";
 
 .footer {
-    @include display-column;
+    @include myColor.display-column;
     flex-wrap: wrap;
     background-color: black;
     margin-top: 2em;

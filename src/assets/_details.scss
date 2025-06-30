@@ -1,4 +1,4 @@
-@import "myColor";
+@use "myColor";
 
 .logement_detail{
     display: flex;
@@ -22,9 +22,9 @@
         justify-content: flex-start;
         margin-top: 4em;
         button {
-            background-color: $myColor;
+            background-color: myColor.$myColor;
             border: none;
-            border-radius: $myBorderRadius;
+            border-radius: myColor.$myBorderRadius;
             width: 7.188em;
             // height: 1.563em;
             color: white;
@@ -38,8 +38,11 @@
 
 .logement_titre{
     font-size: 2.25em;
-    color: $myColor;
+    color: myColor.$myColor;
     margin: 0;
+}
+.logement_titre_lieu {
+    color: black;
 }
 
 .logement_detailDeuxieme {
@@ -52,10 +55,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    color: $myColor;
+    color: myColor.$myColor;
     margin-left: 1em;
     p {
-        color:$myColor;
+        color: myColor.$myColor;
         margin-right: 3em;
     }
     img {
@@ -79,7 +82,7 @@
 
 .logement_detailDeuxiemeRating{
     display: flex;
-    color:$myColor;
+    color: myColor.$myColor;
     justify-content: flex-end;
     align-items: center;
     margin-top: 1.5em;

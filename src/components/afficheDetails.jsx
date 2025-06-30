@@ -28,7 +28,7 @@ function AffichageDetails({logement}) {
                 </h4>
                 <div className='logement_detailDeuxiemeRating'>
                     {rating.map((toto) =>(
-                    logement.rating >= toto ? <FontAwesomeIcon icon="fa-solid fa-star" /> : <FontAwesomeIcon icon="fa-regular fa-star" />))}
+                    logement.rating >= toto ? <FontAwesomeIcon key = {toto} icon="fa-solid fa-star" /> : <FontAwesomeIcon key = {toto} icon="fa-regular fa-star" />))}
                 </div>
             </div>
         </section>

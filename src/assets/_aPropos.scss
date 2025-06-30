@@ -1,4 +1,4 @@
-@import "myColor";
+@use "myColor";
 
 .aPropos{
     display: flex;
@@ -6,7 +6,7 @@
 }
 
 .mainApropos {
-    @include display-column;
+    @include myColor.display-column;
     margin: 1em 0 1em 0;
     width: 77.5em;
 }
